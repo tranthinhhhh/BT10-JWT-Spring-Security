@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập - BT10 JJWT</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<main class="shell">
+    <header class="hero">
+        <span class="eyebrow">BÀI TẬP 10 · JJWT</span>
+        <h1>Xác thực JWT với Spring Security 6</h1>
+        <p>Đăng nhập để lấy Bearer token, hoặc tạo nhanh một tài khoản học thử.</p>
+    </header>
+
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+    <section class="grid">
+        <form id="login-form" class="card">
+            <h2>Đăng nhập</h2>
+            <label>Email
+                <input id="login-email" type="email" autocomplete="username" required
+                       placeholder="student@example.com">
+            </label>
+            <label>Mật khẩu
+                <input id="login-password" type="password" autocomplete="current-password"
+                       required placeholder="Tối thiểu 8 ký tự">
+            </label>
+            <button type="submit">Đăng nhập</button>
+        </form>
+
+        <form id="signup-form" class="card secondary">
+            <h2>Đăng ký</h2>
+            <label>Họ tên
+                <input id="signup-name" type="text" maxlength="100" required
+                       placeholder="Nguyễn Văn A">
+            </label>
+            <label>Email
+                <input id="signup-email" type="email" autocomplete="email" required
+                       placeholder="student@example.com">
+            </label>
+            <label>Mật khẩu
+                <input id="signup-password" type="password" minlength="8" maxlength="72"
+                       autocomplete="new-password" required>
+            </label>
+            <button type="submit">Tạo tài khoản</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
